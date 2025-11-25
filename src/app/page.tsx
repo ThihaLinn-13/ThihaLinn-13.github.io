@@ -8,7 +8,6 @@ import {
 } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
-// --- YOUR DATA ---
 const DATA = {
   personal: {
     name: "Thiha Linn",
@@ -16,15 +15,15 @@ const DATA = {
     location: "Yangon, Myanmar",
     email: "thihalinn0004@gmail.com",
     linkedin: "https://www.linkedin.com/in/Thiha-Linn",
-    github: "https://github.com/your-username",
+    github: "https://github.com/ThihaLinn-13",
     avatar: "/assets/thihlinn.png", 
     summary: "Fullstack Developer with enterprise experience delivering financial and insurance technologies. Specialized in building high-availability backends (Spring Boot, NestJS) and cross-platform frontends. Bilingual professional (English/Mandarin HSK-4) bridging technical communication gaps in international teams."
   },
   skills: {
     backend: ["Java Spring Boot", "Java Servlet", "NestJS", "Node.js", "Microservices", "REST APIs", "Jersey"],
-    frontend: ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS"],
+    frontend: ["React", "Next.js", "Angular", "TypeScript"],
     mobile: ["Flutter (Dart)", "React Native (Expo)"],
-    database: ["PostgreSQL", "Microsoft SQL", "Redis"],
+    database: ["PostgreSQL", "Microsoft SQL","Mysql", "Redis"],
     devops: ["Docker", "Ansible", "CI/CD Pipelines", "Git", "System Monitoring", "Linux"],
   },
   experience: [
