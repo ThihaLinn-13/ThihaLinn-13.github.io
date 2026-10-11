@@ -1,0 +1,63 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="moonSurface" cx="34%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="#F4F5F7"/>
+      <stop offset="42%" stop-color="#D8DAE0"/>
+      <stop offset="78%" stop-color="#9CA1AB"/>
+      <stop offset="100%" stop-color="#4E525C"/>
+    </radialGradient>
+    <radialGradient id="crater" cx="38%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#8B909B"/>
+      <stop offset="70%" stop-color="#A9AEB8"/>
+      <stop offset="100%" stop-color="#D2D5DB"/>
+    </radialGradient>
+    <radialGradient id="maria" cx="40%" cy="36%" r="70%">
+      <stop offset="0%" stop-color="#9EA3AD"/>
+      <stop offset="100%" stop-color="#B9BDC6"/>
+    </radialGradient>
+    <clipPath id="moonClip">
+      <circle cx="100" cy="100" r="92"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="100" cy="100" r="92" fill="url(#moonSurface)"/>
+
+  <g clip-path="url(#moonClip)">
+    <ellipse cx="74" cy="78" rx="34" ry="27" fill="url(#maria)" opacity="0.75"/>
+    <ellipse cx="124" cy="122" rx="26" ry="21" fill="url(#maria)" opacity="0.6"/>
+    <ellipse cx="132" cy="64" rx="19" ry="15" fill="url(#maria)" opacity="0.5"/>
+
+    <g>
+      <circle cx="62" cy="120" r="17" fill="url(#crater)"/>
+      <circle cx="60" cy="116" r="17" fill="none" stroke="#F2F3F5" stroke-width="2.5" opacity="0.55"/>
+      <circle cx="146" cy="92" r="12" fill="url(#crater)"/>
+      <circle cx="144" cy="89" r="12" fill="none" stroke="#F2F3F5" stroke-width="2" opacity="0.5"/>
+      <circle cx="96" cy="152" r="10" fill="url(#crater)"/>
+      <circle cx="94.5" cy="149.5" r="10" fill="none" stroke="#F2F3F5" stroke-width="1.8" opacity="0.45"/>
+      <circle cx="158" cy="146" r="8" fill="url(#crater)"/>
+      <circle cx="156.5" cy="143.5" r="8" fill="none" stroke="#F2F3F5" stroke-width="1.6" opacity="0.45"/>
+      <circle cx="52" cy="66" r="9" fill="url(#crater)"/>
+      <circle cx="50.5" cy="63.5" r="9" fill="none" stroke="#F2F3F5" stroke-width="1.6" opacity="0.4"/>
+      <circle cx="122" cy="34" r="7" fill="url(#crater)"/>
+      <circle cx="120.5" cy="32" r="7" fill="none" stroke="#F2F3F5" stroke-width="1.5" opacity="0.4"/>
+    </g>
+
+    <g fill="#6E737D" opacity="0.25">
+      <circle cx="88" cy="60" r="2.4"/>
+      <circle cx="112" cy="92" r="2"/>
+      <circle cx="76" cy="104" r="1.8"/>
+      <circle cx="138" cy="112" r="2.2"/>
+      <circle cx="102" cy="132" r="1.6"/>
+      <circle cx="66" cy="90" r="1.7"/>
+      <circle cx="128" cy="76" r="1.5"/>
+      <circle cx="92" cy="172" r="2.1"/>
+      <circle cx="160" cy="112" r="1.6"/>
+      <circle cx="46" cy="140" r="1.9"/>
+    </g>
+
+    <ellipse cx="168" cy="146" rx="86" ry="86" fill="#1F2126" opacity="0.28"/>
+    <ellipse cx="44" cy="52" rx="60" ry="60" fill="#FFFFFF" opacity="0.12"/>
+  </g>
+
+  <circle cx="100" cy="100" r="92" stroke="#3A3D45" stroke-width="2" opacity="0.35"/>
+</svg>
