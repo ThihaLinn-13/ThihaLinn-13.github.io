@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Thiha Linn — Mobile & Fullstack Developer",
   description:
     "Mobile and Fullstack Developer with 2+ years of experience building enterprise web applications, insurance mini apps, and business solutions.",
+  icons: {
+    icon: "/THL.png",
+  },
 };
 
 /**
