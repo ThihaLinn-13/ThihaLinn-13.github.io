@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thiha Linn — Mobile & Fullstack Developer",
+  title: "Thiha Linn — Mobile & Full-Stack Developer",
   description:
-    "Mobile and Fullstack Developer with 2+ years of experience building enterprise web applications, insurance mini apps, and business solutions.",
+    "Mobile and Full-Stack Developer with 2+ years of experience building enterprise web applications, insurance mini apps, and business solutions.",
   icons: {
     icon: "/THL.png",
   },

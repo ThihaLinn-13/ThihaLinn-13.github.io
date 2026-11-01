@@ -17,22 +17,27 @@ export type SkillLevel = {
   value: number;
 };
 
-export const DATA = {
-  intro: {
-    greeting: "Hello",
-    name: "My name is Thiha Linn",
-    role: "I am a Full-Stack and Mobile Developer",
-    welcome: "Welcome to my portfolio",
-  },
+export type ProjectItem = {
+  id: number;
+  title: string;
+  description: string;
+  stack: string[];
+  tag: "Work" | "Personal";
+  /** Public source link, if any. Omit for internal/work projects. */
+  repo?: string;
+  /** Live demo link, if any. */
+  live?: string;
+};
 
+export const DATA = {
   personal: {
     name: "Thiha Linn",
-    role: "Mobile and Fullstack Developer",
+    role: "Mobile and Full-Stack Developer",
     location: "Yangon, Myanmar",
     email: "thihalinn0004@gmail.com",
     linkedin: "https://www.linkedin.com/in/Thiha-Linn",
     github: "https://github.com/ThihaLinn-13",
-    avatar: "/assets/thihlinn.png",
+    avatar: "/Thiha.jpg",
     summary: [
       "I'm a Full-Stack Developer with 2+ years of professional experience building web applications and business solutions. I work with Java, Spring Boot, NestJS, React, and Angular to develop REST APIs, secure authentication systems, and practical user-focused applications.",
       "My experience includes developing KPay Mini Apps for Personal Accident and Travel Insurance, building insurance premium calculators, and working on the A365 Attendance App. I enjoy solving technical problems, learning new technologies, and building reliable applications that meet real business needs.",
@@ -70,6 +75,49 @@ export const DATA = {
     { key: "database", label: "Database", value: 80 },
     { key: "devops", label: "DevOps", value: 55 },
   ] satisfies SkillLevel[],
+
+  projects: [
+    {
+      id: 1,
+      title: "Insurance Mini App",
+      description:
+        "KPay mini app for Travel Protect and Personal Accident insurance, with product browsing, premium calculation, and payment gateway integration.",
+      stack: ["Spring Boot", "REST APIs", "KPay API Gateway","Angular"],
+      tag: "Work",
+    },
+    {
+      id: 2,
+      title: "Insurance Admin Portal",
+      description:
+        "Administrative platform for managing users, roles, menus, and insurance products, secured with JWT authentication and role-based access control.",
+      stack: ["Spring Boot", "React", "JWT", "RBAC"],
+      tag: "Work",
+    },
+    {
+      id: 3,
+      title: "A365 Attendance App",
+      description:
+        "Attendance application with a NestJS backend and Flutter mobile client, covering authentication, REST APIs, and role-based access control.",
+      stack: ["NestJS", "Flutter", "PostgreSQL", "REST APIs"],
+      tag: "Work",
+    },
+    {
+      id: 4,
+      title: "Movie Streaming Platform",
+      description:
+        "Netflix-inspired streaming platform with user authentication, a browsable catalogue, and a Next.js front end powered by a Spring Boot API.",
+      stack: ["Spring Boot", "Next.js", "TypeScript"],
+      tag: "Personal",
+    },
+    {
+      id: 5,
+      title: "Car Rental Application",
+      description:
+        "Car rental app with authentication, database management, and interactive vehicle browsing, built on Next.js and Supabase.",
+      stack: ["Next.js", "Supabase", "TypeScript"],
+      tag: "Personal",
+    },
+  ] satisfies ProjectItem[],
 
   experience: [
     {
@@ -118,6 +166,7 @@ export const DATA = {
 export const NAV_LINKS = [
   { href: "#summary", label: "Summary" },
   { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#education", label: "Education" },
   { href: "#certifications", label: "Certifications" },

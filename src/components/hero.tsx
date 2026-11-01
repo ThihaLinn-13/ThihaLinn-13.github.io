@@ -73,13 +73,15 @@ export function Hero() {
               className="relative w-56 h-56 md:w-64 md:h-64"
             >
               <div className="absolute -inset-3 rounded-[2rem] border border-border/60" />
-              <img
-                src={DATA.personal.avatar}
-                alt={`${DATA.personal.name} portrait`}
-                width={256}
-                height={256}
-                className="relative size-full rounded-3xl object-cover shadow-xl ring-1 ring-border"
-              />
+              <div className="relative size-full overflow-hidden rounded-3xl bg-card shadow-xl ring-1 ring-border">
+                <img
+                  src={DATA.personal.avatar}
+                  alt={`${DATA.personal.name} portrait`}
+                  width={256}
+                  height={256}
+                  className="absolute inset-0 size-full origin-bottom translate-y-4 scale-150 object-cover object-bottom"
+                />
+              </div>
             </motion.div>
           </div>
 
