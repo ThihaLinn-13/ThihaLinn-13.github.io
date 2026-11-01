@@ -46,7 +46,7 @@ export function Projects() {
                 ))}
               </div>
 
-              {project.repo || project.live ? (
+              {/* {project.repo || project.live ? (
                 <div className="mt-6 flex items-center gap-3 border-t border-border/50 pt-4">
                   {project.repo ? (
                     <a
@@ -73,7 +73,7 @@ export function Projects() {
                     </a>
                   ) : null}
                 </div>
-              ) : null}
+              ) : null} */}
             </article>
           </Reveal>
         ))}
